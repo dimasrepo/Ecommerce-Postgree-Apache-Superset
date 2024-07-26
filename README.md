@@ -80,6 +80,3 @@ Insights from the Sales Growth Chart:
 - **Specific Observations: Significant Growth Spikes:** There are several periods of rapid sales growth, particularly in late 2017 and early 2018. These spikes might be attributed to factors such as successful marketing campaigns, product launches, or seasonal trends.
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
