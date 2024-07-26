@@ -74,16 +74,6 @@ Insights from the Sales Growth Chart:
 - **Overall Trend:** The chart depicts a general upward trend in sales over the period from October 2017 to July 2018. This indicates overall business growth and positive sales performance.
 - **Specific Observations: Significant Growth Spikes:** There are several periods of rapid sales growth, particularly in late 2017 and early 2018. These spikes might be attributed to factors such as successful marketing campaigns, product launches, or seasonal trends.
 
-## How to Import Dashboards
-
-1. Open Apache Superset.
-2. Navigate to "Manage" -> "Import Dashboard".
-3. Select the `.json` file from this repository.
-4. Click "Import".
-
-## Dependencies
-
-Ensure you have Apache Superset installed and have the necessary access rights to import dashboards.
 
 ## License
 
