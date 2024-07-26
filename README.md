@@ -1,8 +1,11 @@
 # Superset Dashboard
 
+![Executive Summary](https://github.com/user-attachments/assets/adc18095-82e7-44c0-ab75-b87b458256ac)
+
 This repository contains a collection of visualizations created with Apache Superset. The dashboards are designed to provide insights into various aspects of the Olist dataset, including product performance, sales trends, customer profiles, and more.
 
 ## Visualizations
+
 
 ### 1. Presentation Order by Category
 **Objective:** Identify the best and worst performing products by category. By linking data from `olist_products_dataset` and `olist_order_items_dataset`, you can analyze the most and least frequently purchased product categories.
