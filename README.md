@@ -1,6 +1,7 @@
 # Superset Dashboard
 
-![Executive Summary](https://github.com/user-attachments/assets/adc18095-82e7-44c0-ab75-b87b458256ac)
+![Executive Summary](https://github.com/user-attachments/assets/da263a81-258a-46f2-bf5b-2ce43ae22681)
+
 
 This repository contains a collection of visualizations created with Apache Superset. The dashboards are designed to provide insights into various aspects of the Olist dataset, including product performance, sales trends, customer profiles, and more.
 
