@@ -1,4 +1,4 @@
-# Superset Dashboard
+# Ecommerce Superset Dashboard
 
 ![Executive Summary New](https://github.com/user-attachments/assets/8fbb465c-3799-492f-81fb-e4de73cc548e)
 
