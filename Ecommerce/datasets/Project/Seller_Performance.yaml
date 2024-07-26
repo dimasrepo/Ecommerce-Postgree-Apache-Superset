@@ -1,0 +1,99 @@
+table_name: Seller Performance
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: public
+sql: "WITH SellerPerformance AS (\r\n    SELECT\r\n        olist_sellers_dataset.seller_id,\r\
+  \n        olist_sellers_dataset.seller_city,\r\n        olist_sellers_dataset.seller_state,\r\
+  \n        COUNT(olist_order_items_dataset.order_id) AS total_orders,\r\n       \
+  \ SUM(olist_order_items_dataset.price) AS total_sales\r\n    FROM olist_sellers_dataset\r\
+  \n    LEFT JOIN olist_order_items_dataset\r\n        ON olist_sellers_dataset.seller_id\
+  \ = olist_order_items_dataset.seller_id\r\n    GROUP BY\r\n        olist_sellers_dataset.seller_id,\r\
+  \n        olist_sellers_dataset.seller_city,\r\n        olist_sellers_dataset.seller_state\r\
+  \n)\r\nSELECT\r\n    seller_city,\r\n    seller_state,\r\n    COUNT(seller_id) AS\
+  \ number_of_sellers,\r\n    SUM(total_orders) AS total_orders_per_city,\r\n    SUM(total_sales)\
+  \ AS total_sales_per_city\r\nFROM SellerPerformance\r\nGROUP BY\r\n    seller_city,\r\
+  \n    seller_state\r\nORDER BY\r\n    total_sales_per_city DESC;\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 865e8863-aa9a-49ff-bdb6-eae1bc90db0a
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: total_orders_per_city
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: total_sales_per_city
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: number_of_sellers
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: seller_state
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: seller_city
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 608c15dd-52f6-42f8-bad9-ca83feb4bd85

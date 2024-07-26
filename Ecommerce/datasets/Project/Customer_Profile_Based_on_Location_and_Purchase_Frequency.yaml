@@ -1,0 +1,82 @@
+table_name: Customer Profile Based on Location and Purchase Frequency
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: public
+sql: "SELECT\r\n    c.customer_id,\r\n    c.customer_city,\r\n    c.customer_state,\r\
+  \n    COUNT(DISTINCT oi.order_id) AS total_orders\r\nFROM\r\n    olist_customers_dataset\
+  \ c\r\nJOIN\r\n    olist_orders_dataset o\r\nON\r\n    c.customer_id = o.customer_id\r\
+  \nJOIN\r\n    olist_order_items_dataset oi\r\nON\r\n    o.order_id = oi.order_id\r\
+  \nGROUP BY\r\n    c.customer_id,\r\n    c.customer_city,\r\n    c.customer_state\r\
+  \nORDER BY\r\n    total_orders DESC;\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 1944ab82-a0a3-4144-a23e-5ff016c24f68
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: total_orders
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: customer_state
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: customer_city
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: customer_id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 608c15dd-52f6-42f8-bad9-ca83feb4bd85

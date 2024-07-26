@@ -1,0 +1,106 @@
+table_name: Total
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: public
+sql: "-- Total Customer\r\nWITH total_customers AS (\r\n    SELECT COUNT(DISTINCT\
+  \ customer_id) AS total_customers\r\n    FROM olist_customers_dataset\r\n),\r\n\r\
+  \n-- Total Order\r\ntotal_orders AS (\r\n    SELECT COUNT(DISTINCT order_id) AS\
+  \ total_orders\r\n    FROM olist_orders_dataset\r\n),\r\n\r\n-- Total Seller\r\n\
+  total_sellers AS (\r\n    SELECT COUNT(DISTINCT seller_id) AS total_sellers\r\n\
+  \    FROM olist_sellers_dataset\r\n),\r\n\r\n-- Total Product Categories\r\ntotal_categories\
+  \ AS (\r\n    SELECT COUNT(DISTINCT product_category_name_english) AS total_categories\r\
+  \n    FROM product_category_name_translation\r\n),\r\n\r\n-- Total Sales\r\ntotal_sales\
+  \ AS (\r\n    SELECT SUM(price * quantity) AS total_sales\r\n    FROM olist_order_items_dataset\r\
+  \n    JOIN olist_orders_dataset ON olist_order_items_dataset.order_id = olist_orders_dataset.order_id\r\
+  \n    JOIN (\r\n        SELECT order_id, COUNT(order_item_id) AS quantity\r\n  \
+  \      FROM olist_order_items_dataset\r\n        GROUP BY order_id\r\n    ) AS quantity_table\
+  \ ON olist_order_items_dataset.order_id = quantity_table.order_id\r\n)\r\n\r\n--\
+  \ Combine all the results\r\nSELECT \r\n    (SELECT total_customers FROM total_customers)\
+  \ AS total_customers,\r\n    (SELECT total_orders FROM total_orders) AS total_orders,\r\
+  \n    (SELECT total_sellers FROM total_sellers) AS total_sellers,\r\n    (SELECT\
+  \ total_categories FROM total_categories) AS total_categories,\r\n    (SELECT total_sales\
+  \ FROM total_sales) AS total_sales;\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: f16398eb-e150-4e43-9c38-9d921947fb18
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: total_sales
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: total_categories
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: total_customers
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: total_orders
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: total_sellers
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 608c15dd-52f6-42f8-bad9-ca83feb4bd85

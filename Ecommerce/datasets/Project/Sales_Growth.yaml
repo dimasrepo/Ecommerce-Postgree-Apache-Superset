@@ -1,0 +1,90 @@
+table_name: Sales Growth
+main_dttm_col: month
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: public
+sql: "-- Step 1: Aggregate sales data by month and year\r\nWITH monthly_sales AS (\r\
+  \n    SELECT\r\n        DATE_TRUNC('month', o.order_purchase_timestamp) AS month,\r\
+  \n        SUM(oi.price * oi.order_item_id) AS total_sales\r\n    FROM\r\n      \
+  \  olist_orders_dataset o\r\n    JOIN\r\n        olist_order_items_dataset oi\r\n\
+  \    ON\r\n        o.order_id = oi.order_id\r\n    GROUP BY\r\n        DATE_TRUNC('month',\
+  \ o.order_purchase_timestamp)\r\n),\r\n\r\n-- Step 2: Calculate month-over-month\
+  \ sales growth\r\nsales_growth AS (\r\n    SELECT\r\n        month,\r\n        total_sales,\r\
+  \n        LAG(total_sales) OVER (ORDER BY month) AS prev_month_sales,\r\n      \
+  \  CASE \r\n            WHEN LAG(total_sales) OVER (ORDER BY month) IS NULL THEN\
+  \ NULL\r\n            ELSE (total_sales - LAG(total_sales) OVER (ORDER BY month))\
+  \ / LAG(total_sales) OVER (ORDER BY month) * 100\r\n        END AS sales_growth_percentage\r\
+  \n    FROM\r\n        monthly_sales\r\n)\r\n\r\n-- Final step: Select results\r\n\
+  SELECT\r\n    month,\r\n    total_sales,\r\n    prev_month_sales,\r\n    sales_growth_percentage\r\
+  \nFROM\r\n    sales_growth\r\nORDER BY\r\n    month;\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 3d9d616e-92b7-43db-a76e-a384b0de7529
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: month
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: sales_growth_percentage
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: prev_month_sales
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: total_sales
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 608c15dd-52f6-42f8-bad9-ca83feb4bd85

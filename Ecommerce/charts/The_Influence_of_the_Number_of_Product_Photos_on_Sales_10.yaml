@@ -1,0 +1,59 @@
+slice_name: The Influence of the Number of Product Photos on Sales
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 18__table
+  viz_type: pie
+  groupby:
+  - product_photos_qty
+  metric:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: total_sales
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 158
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: FLOAT
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(total_sales)
+    optionName: metric_ydk326m8whg_vu2knfl06nq
+  adhoc_filters: []
+  row_limit: 10
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: bottom
+  label_type: key
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  outerRadius: 70
+  donut: true
+  innerRadius: 55
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":18,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["product_photos_qty"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"total_sales","description":null,"expression":null,"filterable":true,"groupby":true,"id":158,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"FLOAT","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(total_sales)","optionName":"metric_ydk326m8whg_vu2knfl06nq"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"total_sales","description":null,"expression":null,"filterable":true,"groupby":true,"id":158,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"FLOAT","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(total_sales)","optionName":"metric_ydk326m8whg_vu2knfl06nq"},false]],"annotation_layers":[],"row_limit":10,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"18__table","viz_type":"pie","groupby":["product_photos_qty"],"metric":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"total_sales","description":null,"expression":null,"filterable":true,"groupby":true,"id":158,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"FLOAT","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(total_sales)","optionName":"metric_ydk326m8whg_vu2knfl06nq"},"adhoc_filters":[],"row_limit":10,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"show_legend":true,"legendType":"scroll","legendOrientation":"bottom","label_type":"key","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"label_line":true,"outerRadius":70,"donut":true,"innerRadius":55,"extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: ae828065-cfeb-4637-8ab1-807655a6b9b5
+version: 1.0.0
+dataset_uuid: 658af3e9-63a5-43a2-a755-a65ec451ba98

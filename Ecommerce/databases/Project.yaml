@@ -1,0 +1,13 @@
+database_name: Project
+sqlalchemy_uri: postgresql+psycopg2://public_readonly.qjdnrhhleeqvixcooejr:XXXXXXXXXX@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: 608c15dd-52f6-42f8-bad9-ca83feb4bd85
+version: 1.0.0

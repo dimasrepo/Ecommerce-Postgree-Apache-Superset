@@ -1,0 +1,116 @@
+table_name: The Influence of Purchase Time on Order Status
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: public
+sql: "WITH order_times AS (\r\n    SELECT\r\n        order_id,\r\n        order_status,\r\
+  \n        order_purchase_timestamp,\r\n        order_approved_at,\r\n        order_delivered_carrier_date,\r\
+  \n        order_delivered_customer_date,\r\n        order_estimated_delivery_date,\r\
+  \n        EXTRACT(epoch FROM (order_approved_at - order_purchase_timestamp)) / 3600\
+  \ AS hours_to_approve,\r\n        EXTRACT(epoch FROM (order_delivered_carrier_date\
+  \ - order_approved_at)) / 3600 AS hours_to_ship,\r\n        EXTRACT(epoch FROM (order_delivered_customer_date\
+  \ - order_delivered_carrier_date)) / 3600 AS hours_to_deliver,\r\n        EXTRACT(epoch\
+  \ FROM (order_delivered_customer_date - order_purchase_timestamp)) / 3600 AS total_hours_to_customer\r\
+  \n    FROM\r\n        olist_orders_dataset\r\n    WHERE\r\n        order_approved_at\
+  \ IS NOT NULL\r\n        AND order_delivered_carrier_date IS NOT NULL\r\n      \
+  \  AND order_delivered_customer_date IS NOT NULL\r\n)\r\nSELECT\r\n    order_status,\r\
+  \n    COUNT(order_id) AS total_orders,\r\n    AVG(hours_to_approve) AS avg_hours_to_approve,\r\
+  \n    AVG(hours_to_ship) AS avg_hours_to_ship,\r\n    AVG(hours_to_deliver) AS avg_hours_to_deliver,\r\
+  \n    AVG(total_hours_to_customer) AS avg_total_hours_to_customer\r\nFROM\r\n  \
+  \  order_times\r\nGROUP BY\r\n    order_status\r\nORDER BY\r\n    total_orders DESC;\r\
+  \n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 09e38df9-1bc0-41c8-8bb0-8123b0d52414
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: avg_total_hours_to_customer
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: avg_hours_to_approve
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: avg_hours_to_deliver
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: avg_hours_to_ship
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: total_orders
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: order_status
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 608c15dd-52f6-42f8-bad9-ca83feb4bd85

@@ -1,0 +1,672 @@
+dashboard_title: Executive Summary
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: bfa3dbe0-dc78-46ea-bd77-dcc63bdf3b05
+position:
+  CHART-2QIgFe8_kZ:
+    children: []
+    id: CHART-2QIgFe8_kZ
+    meta:
+      chartId: 13
+      height: 50
+      sliceName: Purchase Patterns Based on Time
+      uuid: 4d9e5c74-3c32-451a-a49b-2f4d5040100c
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-g_yRmvbreQ
+    type: CHART
+  CHART-TCtH9x0FTo:
+    children: []
+    id: CHART-TCtH9x0FTo
+    meta:
+      chartId: 10
+      height: 50
+      sliceName: The Influence of the Number of Product Photos on Sales
+      uuid: ae828065-cfeb-4637-8ab1-807655a6b9b5
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-zHPp0d22kc
+    type: CHART
+  CHART-aoNtkxvjsu:
+    children: []
+    id: CHART-aoNtkxvjsu
+    meta:
+      chartId: 1
+      height: 50
+      sliceName: Product Price
+      uuid: 3c460609-89cd-451d-b80f-f2e141f05393
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-zHPp0d22kc
+    type: CHART
+  CHART-b8i4t6tXsw:
+    children: []
+    id: CHART-b8i4t6tXsw
+    meta:
+      chartId: 9
+      height: 50
+      sliceName: The Influence of Purchase Time on Order Status
+      uuid: a5425dcf-fbe0-44bb-bd25-ee64bc826a76
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-g_yRmvbreQ
+    type: CHART
+  CHART-explore-18-1:
+    children: []
+    id: CHART-explore-18-1
+    meta:
+      chartId: 18
+      height: 18
+      sliceName: Total Transaction
+      uuid: f153ec8a-fd1a-4b10-bb31-d06c51c1a923
+      width: 2
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-9xd6ZXnyRi
+    type: CHART
+  CHART-explore-19-1:
+    children: []
+    id: CHART-explore-19-1
+    meta:
+      chartId: 19
+      height: 18
+      sliceName: Total Category
+      uuid: 40644e72-53c6-4d42-844a-33814f07e2ae
+      width: 2
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-9xd6ZXnyRi
+    type: CHART
+  CHART-explore-21-1:
+    children: []
+    id: CHART-explore-21-1
+    meta:
+      chartId: 21
+      height: 18
+      sliceName: Total Seller
+      uuid: 04578842-9170-4b41-abb8-8416d3e87efa
+      width: 2
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-9xd6ZXnyRi
+    type: CHART
+  CHART-hPuz5DBfp4:
+    children: []
+    id: CHART-hPuz5DBfp4
+    meta:
+      chartId: 7
+      height: 50
+      sliceName: Sales Growth
+      uuid: 1ddebf46-aaf4-4b18-9821-039b4a32c041
+      width: 8
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-nA7XdeZFBf
+    type: CHART
+  CHART-hdWHTeC_-L:
+    children: []
+    id: CHART-hdWHTeC_-L
+    meta:
+      chartId: 15
+      height: 50
+      sliceName: The Influence of Product Weight and Dimensions on Price and Freight
+        Value
+      uuid: 6483b8df-a649-4ac7-a885-28188ee9470d
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-D_1Y4z1K7o
+    type: CHART
+  CHART-jn72yPufdI:
+    children: []
+    id: CHART-jn72yPufdI
+    meta:
+      chartId: 8
+      height: 50
+      sliceName: Seller Performance
+      uuid: 56d39a04-826c-4b4e-8e72-3fbe75f8d644
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-D_1Y4z1K7o
+    type: CHART
+  CHART-pnNfB3vrFf:
+    children: []
+    id: CHART-pnNfB3vrFf
+    meta:
+      chartId: 11
+      height: 50
+      sliceName: Comparison of Payment Methods to Payment Value
+      uuid: 2ce8d671-1a9f-4123-ad82-e7f4d9eb836a
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-g_yRmvbreQ
+    type: CHART
+  CHART-rQIu-bQabx:
+    children: []
+    id: CHART-rQIu-bQabx
+    meta:
+      chartId: 3
+      height: 50
+      sliceName: Payment Type
+      uuid: 17514180-5e85-4edb-b967-b360a10d34f7
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-zHPp0d22kc
+    type: CHART
+  CHART-uQT9S2ojvG:
+    children: []
+    id: CHART-uQT9S2ojvG
+    meta:
+      chartId: 16
+      height: 18
+      sliceName: Total Sales
+      uuid: 079674f1-44df-49e0-b731-4b5636af3179
+      width: 2
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-9xd6ZXnyRi
+    type: CHART
+  CHART-zPBnIkA31x:
+    children: []
+    id: CHART-zPBnIkA31x
+    meta:
+      chartId: 14
+      height: 50
+      sliceName: Customer Profile Based on Location and Purchase Frequency
+      uuid: ef6ce8b4-1093-44a0-8a7e-20cbdf09620c
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-nA7XdeZFBf
+    type: CHART
+  CHART-zYDBOLFKev:
+    children: []
+    id: CHART-zYDBOLFKev
+    meta:
+      chartId: 5
+      height: 50
+      sliceName: Presentation Order by Category
+      uuid: 031d8fad-bae8-46cd-b40a-a6a0dcca282d
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    - ROW-D_1Y4z1K7o
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-5FOD_-XR5p:
+    children: []
+    id: DIVIDER-5FOD_-XR5p
+    meta: {}
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: DIVIDER
+  DIVIDER-X9soPADAS0:
+    children: []
+    id: DIVIDER-X9soPADAS0
+    meta: {}
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: DIVIDER
+  DIVIDER-oGrvosQqdn:
+    children: []
+    id: DIVIDER-oGrvosQqdn
+    meta: {}
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: DIVIDER
+  DIVIDER-utTXyisOZd:
+    children: []
+    id: DIVIDER-utTXyisOZd
+    meta: {}
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: DIVIDER
+  GRID_ID:
+    children: []
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER-y5yZ-dcj2a:
+    children: []
+    id: HEADER-y5yZ-dcj2a
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: Executive Summary
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: HEADER
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Executive Summary
+    type: HEADER
+  ROOT_ID:
+    children:
+    - TABS-JT3E1hSFmT
+    id: ROOT_ID
+    type: ROOT
+  ROW-9xd6ZXnyRi:
+    children:
+    - CHART-uQT9S2ojvG
+    - CHART-explore-18-1
+    - CHART-explore-21-1
+    - CHART-explore-19-1
+    id: ROW-9xd6ZXnyRi
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: ROW
+  ROW-D_1Y4z1K7o:
+    children:
+    - CHART-zYDBOLFKev
+    - CHART-jn72yPufdI
+    - CHART-hdWHTeC_-L
+    id: ROW-D_1Y4z1K7o
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: ROW
+  ROW-g_yRmvbreQ:
+    children:
+    - CHART-2QIgFe8_kZ
+    - CHART-pnNfB3vrFf
+    - CHART-b8i4t6tXsw
+    id: ROW-g_yRmvbreQ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: ROW
+  ROW-nA7XdeZFBf:
+    children:
+    - CHART-hPuz5DBfp4
+    - CHART-zPBnIkA31x
+    id: ROW-nA7XdeZFBf
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: ROW
+  ROW-zHPp0d22kc:
+    children:
+    - CHART-TCtH9x0FTo
+    - CHART-aoNtkxvjsu
+    - CHART-rQIu-bQabx
+    id: ROW-zHPp0d22kc
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    - TAB-eyBgdNP3al
+    type: ROW
+  TAB-eyBgdNP3al:
+    children:
+    - HEADER-y5yZ-dcj2a
+    - ROW-9xd6ZXnyRi
+    - DIVIDER-oGrvosQqdn
+    - ROW-nA7XdeZFBf
+    - DIVIDER-X9soPADAS0
+    - ROW-D_1Y4z1K7o
+    - DIVIDER-5FOD_-XR5p
+    - ROW-g_yRmvbreQ
+    - DIVIDER-utTXyisOZd
+    - ROW-zHPp0d22kc
+    id: TAB-eyBgdNP3al
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Main Dashboard
+    parents:
+    - ROOT_ID
+    - TABS-JT3E1hSFmT
+    type: TAB
+  TABS-JT3E1hSFmT:
+    children:
+    - TAB-eyBgdNP3al
+    id: TABS-JT3E1hSFmT
+    meta: {}
+    parents:
+    - ROOT_ID
+    type: TABS
+metadata:
+  chart_configuration:
+    '1':
+      id: 1
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 5
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 13
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '3':
+      id: 3
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 5
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 13
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '5':
+      id: 5
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 13
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '7':
+      id: 7
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 5
+        - 8
+        - 9
+        - 10
+        - 11
+        - 13
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '8':
+      id: 8
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 5
+        - 7
+        - 9
+        - 10
+        - 11
+        - 13
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '9':
+      id: 9
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 5
+        - 7
+        - 8
+        - 10
+        - 11
+        - 13
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '10':
+      id: 10
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 5
+        - 7
+        - 8
+        - 9
+        - 11
+        - 13
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '11':
+      id: 11
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 5
+        - 7
+        - 8
+        - 9
+        - 10
+        - 13
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '13':
+      id: 13
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 5
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '14':
+      id: 14
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 5
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 13
+        - 15
+        - 16
+        - 18
+        - 19
+        - 21
+    '15':
+      id: 15
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 5
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 13
+        - 14
+        - 16
+        - 18
+        - 19
+        - 21
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 1
+    - 3
+    - 5
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 13
+    - 14
+    - 15
+    - 16
+    - 18
+    - 19
+    - 21
+  color_scheme: googleCategory10c
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+    '1': '#3366cc'
+    '2': '#dc3912'
+    '3': '#ff9900'
+    '4': '#109618'
+    '5': '#990099'
+    '6': '#0099c6'
+    '7': '#dd4477'
+    '8': '#b82e2e'
+    '10': '#316395'
+    Total Sales: '#3366cc'
+    Previous Month Sales: '#dc3912'
+    Growth in percent: '#ff9900'
+    Order: '#3366cc'
+    Total Order: '#3366cc'
+    Payment Value: '#3366cc'
+    Averag Payment Value: '#ff9900'
+    Price: '#3366cc'
+    Average Total Hour to Customer: '#3366cc'
+    Average Delivery Time: '#dc3912'
+    Average Shiping: '#ff9900'
+    Average Approval: '#109618'
+    <NULL>: '#66aa00'
+    credit_card: '#3366cc'
+    boleto: '#dc3912'
+    voucher: '#ff9900'
+    debit_card: '#109618'
+  color_scheme_domain:
+  - '#3366cc'
+  - '#dc3912'
+  - '#ff9900'
+  - '#109618'
+  - '#990099'
+  - '#0099c6'
+  - '#dd4477'
+  - '#66aa00'
+  - '#b82e2e'
+  - '#316395'
+version: 1.0.0

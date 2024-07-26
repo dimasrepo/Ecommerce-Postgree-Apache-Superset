@@ -1,0 +1,165 @@
+slice_name: The Influence of Purchase Time on Order Status
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 17__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 9
+  x_axis: order_status
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - aggregate: AVG
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: avg_total_hours_to_customer
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 156
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: Average Total Hour to Customer
+    optionName: metric_ysmiyfzjyj_r2w306y7ph
+    sqlExpression: null
+  - aggregate: AVG
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: avg_hours_to_approve
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 153
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: Average Approval
+    optionName: metric_9ojoub2k8ri_cgmp7gpffx7
+    sqlExpression: null
+  - aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: avg_hours_to_ship
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 154
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: Average Shiping
+    optionName: metric_zdpjiod3y6_sdsxwq84f9d
+    sqlExpression: null
+  - aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: avg_hours_to_deliver
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 155
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: Average Delivery Time
+    optionName: metric_fxft9j6x5cf_enadijovskf
+    sqlExpression: null
+  groupby: []
+  adhoc_filters: []
+  order_desc: true
+  row_limit: 1000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: horizontal
+  x_axis_title: ''
+  x_axis_title_margin: 15
+  y_axis_title: ''
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: googleCategory10c
+  show_value: true
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: bottom
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 0
+  y_axis_format: SMART_NUMBER
+  logAxis: false
+  minorSplitLine: false
+  truncateXAxis: true
+  truncateYAxis: false
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":17,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"order_status","label":"order_status","expressionType":"SQL"}],"metrics":[{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"avg_total_hours_to_customer","description":null,"expression":null,"filterable":true,"groupby":true,"id":156,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Average
+  Total Hour to Customer","optionName":"metric_ysmiyfzjyj_r2w306y7ph","sqlExpression":null},{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"avg_hours_to_approve","description":null,"expression":null,"filterable":true,"groupby":true,"id":153,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Average
+  Approval","optionName":"metric_9ojoub2k8ri_cgmp7gpffx7","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"avg_hours_to_ship","description":null,"expression":null,"filterable":true,"groupby":true,"id":154,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Average
+  Shiping","optionName":"metric_zdpjiod3y6_sdsxwq84f9d","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"avg_hours_to_deliver","description":null,"expression":null,"filterable":true,"groupby":true,"id":155,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Average
+  Delivery Time","optionName":"metric_fxft9j6x5cf_enadijovskf","sqlExpression":null}],"orderby":[[{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"avg_total_hours_to_customer","description":null,"expression":null,"filterable":true,"groupby":true,"id":156,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Average
+  Total Hour to Customer","optionName":"metric_ysmiyfzjyj_r2w306y7ph","sqlExpression":null},false]],"annotation_layers":[],"row_limit":1000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["order_status"],"columns":[],"aggregates":{"Average
+  Total Hour to Customer":{"operator":"mean"},"Average Approval":{"operator":"mean"},"Average
+  Shiping":{"operator":"mean"},"Average Delivery Time":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"17__table","viz_type":"echarts_timeseries_bar","slice_id":9,"x_axis":"order_status","time_grain_sqla":"P1D","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"avg_total_hours_to_customer","description":null,"expression":null,"filterable":true,"groupby":true,"id":156,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Average
+  Total Hour to Customer","optionName":"metric_ysmiyfzjyj_r2w306y7ph","sqlExpression":null},{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"avg_hours_to_approve","description":null,"expression":null,"filterable":true,"groupby":true,"id":153,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Average
+  Approval","optionName":"metric_9ojoub2k8ri_cgmp7gpffx7","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"avg_hours_to_ship","description":null,"expression":null,"filterable":true,"groupby":true,"id":154,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Average
+  Shiping","optionName":"metric_zdpjiod3y6_sdsxwq84f9d","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"avg_hours_to_deliver","description":null,"expression":null,"filterable":true,"groupby":true,"id":155,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Average
+  Delivery Time","optionName":"metric_fxft9j6x5cf_enadijovskf","sqlExpression":null}],"groupby":[],"adhoc_filters":[],"order_desc":true,"row_limit":1000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"horizontal","x_axis_title":"","x_axis_title_margin":15,"y_axis_title":"","y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"googleCategory10c","show_value":true,"only_total":true,"show_legend":true,"legendType":"scroll","legendOrientation":"bottom","x_axis_time_format":"smart_date","xAxisLabelRotation":0,"y_axis_format":"SMART_NUMBER","logAxis":false,"minorSplitLine":false,"truncateXAxis":true,"truncateYAxis":false,"y_axis_bounds":[null,null],"rich_tooltip":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: a5425dcf-fbe0-44bb-bd25-ee64bc826a76
+version: 1.0.0
+dataset_uuid: 09e38df9-1bc0-41c8-8bb0-8123b0d52414

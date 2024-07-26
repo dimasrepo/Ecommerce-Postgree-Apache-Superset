@@ -1,0 +1,56 @@
+table_name: Purchase Patterns Based on Time
+main_dttm_col: month
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: public
+sql: "SELECT\r\n    DATE_TRUNC('month', o.order_purchase_timestamp) AS month,\r\n\
+  \    COUNT(o.order_id) AS total_orders\r\nFROM\r\n    olist_orders_dataset o\r\n\
+  JOIN\r\n    olist_order_items_dataset oi\r\nON\r\n    o.order_id = oi.order_id\r\
+  \nGROUP BY\r\n    month\r\nORDER BY\r\n    month;\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: d11946f8-2739-4a45-b729-fe7d2a288acb
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: month
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: total_orders
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 608c15dd-52f6-42f8-bad9-ca83feb4bd85
