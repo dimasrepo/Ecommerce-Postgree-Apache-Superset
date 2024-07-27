@@ -56,32 +56,15 @@ The visualizations reveal several trends:
 
 ## Visualizations
 
-### 1. Presentation Order by Category
-![Presentation Order by Category](images/presentation_order_by_category.png)
-
-### 2. The Influence of Product Weight and Dimensions on Price and Freight Value
-![Influence of Product Weight and Dimensions](images/influence_of_product_weight.png)
-
-### 3. The Influence of Purchase Time on Order Status
-![Purchase Time vs. Order Status](images/purchase_time_vs_order_status.png)
-
-### 4. Seller Performance
-![Seller Performance](images/seller_performance.png)
-
-### 5. The Influence of the Number of Product Photos on Sales
-![Number of Photos vs. Sales](images/number_of_photos_vs_sales.png)
-
-### 6. Comparison of Payment Methods to Payment Value
-![Payment Methods vs. Payment Value](images/payment_methods_vs_value.png)
-
-### 7. Purchase Patterns Based on Time
-![Purchase Patterns by Time](images/purchase_patterns_by_time.png)
-
-### 8. Customer Profile Based on Location and Purchase Frequency
-![Customer Profile by Location](images/customer_profile_by_location.png)
-
-### 9. Sales Growth
-![Sales Growth](images/sales_growth.png)
+ 1. Presentation Order by Category
+ 2. The Influence of Product Weight and Dimensions on Price and Freight Value
+ 3. The Influence of Purchase Time on Order Status
+ 4. Seller Performance
+ 5. The Influence of the Number of Product Photos on Sales
+ 6. Comparison of Payment Methods to Payment Value
+ 7. Purchase Patterns Based on Time
+ 8. Customer Profile Based on Location and Purchase Frequency
+ 9. Sales Growth
 
 ## Reporting
 
