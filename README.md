@@ -1,4 +1,4 @@
-# Data Visualizations with Apache Superset
+# Ecommerce Apache Superset
 
 This repository contains a collection of visualizations created with Apache Superset. The dashboards provide insights into various aspects of the Olist dataset, including product performance, sales trends, customer profiles, and more.
 
